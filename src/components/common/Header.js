@@ -1,11 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, IndexLink } from 'react-router'
 
 const Header = () => (
   <nav>
-    <Link to="/">Home</Link>
+    <IndexLink to="/" activeClassName="active">Home</IndexLink>
     {' | '}
-    <Link to="about">About</Link>
+    <Link to="courses" activeClassName="active">Courses</Link>
+    {' | '}
+    <Link to="about" activeClassName="active">About</Link>
   </nav>
 )
 
